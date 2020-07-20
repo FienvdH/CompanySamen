@@ -4,13 +4,22 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 import java.awt.*;
 
 @Entity
 public class Employee {
 
+<<<<<<< HEAD
     @Id //primary key
     @GeneratedValue(strategy = GenerationType.AUTO) //autoincrement
+=======
+	@Id //primary key
+	@GeneratedValue(strategy = GenerationType.AUTO)
+>>>>>>> master
     long id;
     String name;
     double salary;
