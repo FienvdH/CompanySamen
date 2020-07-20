@@ -1,5 +1,8 @@
 package com.company.company.domain;
 
-public class DepartmentManager {
+import javax.persistence.Entity;
+
+@Entity
+public class DepartmentManager extends Employee{
 
 }
