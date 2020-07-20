@@ -1,11 +1,17 @@
 package com.company.company.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import java.awt.*;
 
 @Entity
 public class Employee {
 
+	@Id //primary key
+	@GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     String name;
     double salary;
