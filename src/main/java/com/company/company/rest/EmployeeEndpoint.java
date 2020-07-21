@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/employee")
 public class EmployeeEndpoint {
     @Autowired
     EmployeeService es;
@@ -18,14 +17,10 @@ public class EmployeeEndpoint {
 
     }
 
-//    @GetMapping("/hoppakee")
-//    public Employee employeeOproep(){
-//        System.out.println("endpoint aangeroepen van hoppakee ");
-//        return es.inDeEmployeeService();
-//    }
-
     @GetMapping("/jojo")
-        public Iterable<Employee> checkDeService(){
+        public Iterable<Employee> checkEmployeeService(){
+        System.out.println("In de service employee");
+        es.inDeEmployeeService();
         return es.geefAlleEmployees();
     }
 

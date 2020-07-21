@@ -15,10 +15,8 @@ public class EmployeeService {
     EmployeeRepository er;
 
     public void inDeEmployeeService(){
-        Employee medewerker = new Employee();
-        medewerker.setName("Deniece");
-        medewerker.setSalary(100000);
-        er.save(medewerker);
+        er.save(new Employee());
+        System.out.println("We zijn in de employee service");
     }
 
     public Iterable<Employee> geefAlleEmployees(){
